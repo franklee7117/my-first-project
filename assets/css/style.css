@@ -1,80 +1,47 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 태블릿 (768px 이하) */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 20px;
+        max-width: 100%;
+        margin: 20px;
+        border-radius: 8px;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
 }
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
+/* 모바일 (480px 이하) */
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+        padding-top: 40px;
+    }
 
-.container {
-    background: #fff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-}
+    .container {
+        margin: 16px;
+        padding: 24px 16px;
+        box-shadow: none;
+        border: 1px solid #e0e0e0;
+    }
 
-h1 {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #333;
-}
+    h1 {
+        font-size: 1rem;
+    }
 
-.form-box {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+    input {
+        padding: 14px 12px;
+        font-size: 16px; /* 모바일 자동확대 방지 */
+    }
 
-input {
-    padding: 12px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    outline: none;
-}
+    .btn-login {
+        padding: 14px;
+        font-size: 1rem;
+    }
 
-input:focus {
-    border-color: #4a90e2;
-}
-
-.btn-login {
-    padding: 12px;
-    background-color: #4a90e2;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-}
-
-.btn-login:hover {
-    background-color: #357abd;
-}
-
-.links {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-}
-
-.links a {
-    color: #4a90e2;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
-.links a:hover {
-    text-decoration: underline;
+    .links a {
+        font-size: 0.85rem;
+    }
 }
