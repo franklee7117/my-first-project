@@ -7,7 +7,7 @@ echo ================================
 git status
 
 :: 커밋 메시지 입력
-set /p msg="테스트 입니다.: "
+set /p msg="Massage input: "
 
 :: add, commit, push 한번에
 git add .
@@ -16,7 +16,7 @@ git pull origin main --rebase
 git push origin main
 
 echo ================================
-echo    Push 완료!
+echo    Push ok!
 echo ================================
 pause
 ```
