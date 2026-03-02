@@ -54,7 +54,19 @@ python -m http.server 8000
 서버를 시작한 후 브라우저에서 http://localhost:7893 (또는 서버가 표시한 포트)로 접속합니다.
 
 ### 중지
-- 서버를 실행한 터미널에서 `Ctrl+C` 를 눌러 종료합니다.
+- 가장 간단한 방법 (npm 사용):
+
+```powershell
+npm run stop
+```
+
+- 터미널에서 직접 `Ctrl+C` 눌러 종료
+
+- 또는 배치 파일 실행:
+
+```powershell
+.\stop-server.bat
+```
 
 ### 터미널에 접근할 수 없을 때 (강제 종료)
 - 포트로 실행 중인 프로세스 ID(PID)를 찾은 후 종료합니다:
