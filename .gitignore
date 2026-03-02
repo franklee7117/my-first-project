@@ -1,4 +1,12 @@
+# git 커밋 제외 (지정폳더 또는 파일명)
+
 node_modules/
 package-lock.json
 package.json
 git-push.bat
+
+# 이미 GitHub에 올라간 파일은 .gitignore만으로는 제거가 안 돼요. 오늘처럼:
+# git rm -r --cached node_modules  ← 캐시에서 제거
+# git add .
+# git commit
+# git push
